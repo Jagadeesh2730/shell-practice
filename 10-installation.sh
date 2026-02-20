@@ -3,6 +3,8 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
    echo "Please run this script with root user access"
+   exit 1
 fi
+
 echo "Installing"
-dnf install ngnix -y
+dnf install nginx -y
