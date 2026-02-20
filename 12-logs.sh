@@ -30,4 +30,3 @@ VALIDATE $? "Installing mysql"
  
 dnf install nodejs -y &>> $LOGS_FILE
 VALIDATE $? "Installing nodejs"
-  S
