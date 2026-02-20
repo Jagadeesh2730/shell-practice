@@ -11,8 +11,8 @@ echo "Sum is :: $SUM"
 
 FRUITS=("Apple" "Banana" "Pomi")
 
-echo "Fruits are: $FRUITS[@]"
+echo "Fruits are: ${FRUITS[@]}"
 
-echo "Fruits are: $FRUITS[1]"
+echo "Fruits are: ${FRUITS[1]}"
 
-echo "Fruits are: $FRUITS[2]"
+echo "Fruits are: ${FRUITS[2]}"
