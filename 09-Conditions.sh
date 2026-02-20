@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=27
+NUMBER=$1
 
 # -gt -> greater than
 # -lt -> less than
