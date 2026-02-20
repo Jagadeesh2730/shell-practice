@@ -10,7 +10,17 @@ echo "Installing"
 dnf install nginx -y
  
  if [ $? -ne 0 ]; then
+
     echo "Installing Nginx ... failure"
 else 
     echo " Installing Nginx ... success"
+fi   
+
+dnf install mysql -y
+
+ if [ $? -ne 0 ]; then
+
+    echo "Installing MySQL ... failure"
+else 
+    echo " Installing MySQL ... success"
 fi   
