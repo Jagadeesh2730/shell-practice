@@ -9,6 +9,8 @@ NUMBER=$1
 
 if [ $NUMBER -gt 20 ]; then
    echo "Given number: $NUMBER is greater than 27"
+elif [ $NUMBER -eq 27 ]; then
+   echo "Given number: $NUMBER is equal to 27"
 else
    echo "Given number: $NUMBER is less than 27"
 fi
