@@ -24,3 +24,11 @@ dnf install mysql -y
 else 
     echo " Installing MySQL ... success"
 fi   
+
+dnf install Nodejs -y
+if [ $? -ne 0 ]; then
+
+    echo "Installing Nodejs ... failure"
+else 
+    echo " Installing Nodejs ... success"
+fi   
