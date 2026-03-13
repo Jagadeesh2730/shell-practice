@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e # this will be checking for errors, if errors it will exit
+
+
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
@@ -32,7 +35,7 @@ do
    if [ $? -ne 0 ]; then 
         echo "$package  not installed... installing now"
    dnf install $package -y &>>$LOGS_FILE
-   VALIDATE $? "$package installation " 
+   #VALIDATE $? "$package installation " 
    else 
         echo -e "$package already installed... $Y skipping $N"
     fi
